@@ -1,14 +1,22 @@
-import { Geist_Mono, Inter } from "next/font/google"
+import { Figtree, Geist_Mono, Geist } from "next/font/google"
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
-
-const fontMono = Geist_Mono({
-  subsets: ["latin"],
+const geistMono = Geist_Mono({
   variable: "--font-mono",
+  subsets: ["latin"],
+})
+
+const figtree = Figtree({
+  variable: "--font-sans",
+  subsets: ["latin"],
+})
+
+const geist = Geist({
+  variable: "--font-geist",
+  subsets: ["latin"],
 })
 
 export default function RootLayout({
@@ -22,9 +30,10 @@ export default function RootLayout({
       suppressHydrationWarning
       className={cn(
         "antialiased",
-        fontMono.variable,
+        geistMono.variable,
         "font-sans",
-        inter.variable
+        figtree.variable,
+        geist.variable
       )}
     >
       <body>
