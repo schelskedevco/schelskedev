@@ -39,7 +39,7 @@ function SidebarModeToggle() {
 
   return (
     <button className="w-full text-left" onClick={() => setTheme(newTheme)}>
-      <span className="-mx-3 block rounded-lg px-3 py-2.5 text-lg/7 font-semibold text-stone-900 hover:bg-stone-50 dark:text-white dark:hover:bg-white/5">
+      <span className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-stone-900 hover:bg-stone-50 dark:text-white dark:hover:bg-white/5">
         {label}
       </span>
     </button>
@@ -57,7 +57,7 @@ export default function Page() {
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Joe Schelske</span>
               <div className="flex items-center gap-2">
-                <span className="text-2xl font-semibold">Joe Schelske</span>
+                <span className="text-xl font-semibold">Joe Schelske</span>
               </div>
             </Link>
           </div>
@@ -96,7 +96,7 @@ export default function Page() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-lg/6 font-semibold"
+                className="text-sm/6 font-semibold"
               >
                 {item.name}
               </Link>
@@ -151,7 +151,7 @@ export default function Page() {
               <Link href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Joe Schelske</span>
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl font-semibold">Joe Schelske</span>
+                  <span className="text-xl font-semibold">Joe Schelske</span>
                 </div>
               </Link>
               <button
@@ -171,7 +171,7 @@ export default function Page() {
                       key={item.name}
                       href={item.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-lg/7 font-semibold text-stone-900 hover:bg-stone-50 dark:text-white dark:hover:bg-white/5"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-900 hover:bg-stone-50 dark:text-white dark:hover:bg-white/5"
                     >
                       {item.name}
                     </Link>
@@ -185,7 +185,9 @@ export default function Page() {
           </DialogPanel>
         </Dialog>
       </header>
-      <main className="mx-auto max-w-3xl grow pt-16 sm:pt-24 lg:pt-28"></main>
+      <main className="mx-auto max-w-3xl grow pt-16 sm:pt-24 lg:pt-28">
+        <p>...</p>
+      </main>
       <footer>
         <p className="mt-10 text-center text-sm/6 text-stone-600 dark:text-stone-400">
           &copy; 2026 Schelske Dev Co. LLC. All rights reserved.

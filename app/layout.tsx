@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils"
 import "./globals.css"
 
 const chicago = localFont({
-  src: "../public/fonts/ChiKareGo2.ttf",
+  src: "../public/fonts/DepartureMono-Regular.woff2",
   variable: "--font-sans",
   display: "swap",
 })
