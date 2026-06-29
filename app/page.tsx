@@ -6,11 +6,12 @@ import { Dialog, DialogPanel } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 
 import { useThemeSwitcher } from "@/hooks/use-theme-switcher"
+import { Separator } from "@/components/ui/separator"
 
 const navigation = [
   { name: "Essays", href: "/essays" },
   { name: "Tech", href: "/tech" },
-  { name: "Travel", href: "/travel" },
+  { name: "Media", href: "/media" },
 ]
 
 function NavbarModeToggle() {
@@ -57,7 +58,9 @@ export default function Page() {
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Joe Schelske</span>
               <div className="flex items-center gap-2">
-                <span className="text-xl font-semibold">Joe Schelske</span>
+                <span className="bg-foreground px-2 text-xl font-semibold text-background">
+                  Joe Schelske
+                </span>
               </div>
             </Link>
           </div>
@@ -151,7 +154,9 @@ export default function Page() {
               <Link href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Joe Schelske</span>
                 <div className="flex items-center gap-2">
-                  <span className="text-xl font-semibold">Joe Schelske</span>
+                  <span className="bg-foreground px-2 text-xl font-semibold text-background">
+                    Joe Schelske
+                  </span>
                 </div>
               </Link>
               <button
@@ -185,8 +190,15 @@ export default function Page() {
           </DialogPanel>
         </Dialog>
       </header>
-      <main className="mx-auto max-w-3xl grow pt-16 sm:pt-24 lg:pt-28">
-        <p>...</p>
+      <main className="mx-auto w-full max-w-3xl grow space-y-4 px-6 pt-16 sm:pt-24 lg:px-0 lg:pt-28">
+        <section id="about" className="flex flex-col gap-4">
+          <h1 className="text-2xl font-bold">About</h1>
+          <p>Software engineer, agent provocateur.</p>
+        </section>
+        <Separator />
+        <section id="essays"></section>
+        <section id="tech"></section>
+        <section id="media"></section>
       </main>
       <footer>
         <p className="mt-10 text-center text-sm/6 text-stone-600 dark:text-stone-400">
