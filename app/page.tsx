@@ -190,15 +190,23 @@ export default function Page() {
           </DialogPanel>
         </Dialog>
       </header>
-      <main className="mx-auto w-full max-w-3xl grow space-y-4 px-6 pt-16 sm:pt-24 lg:px-0 lg:pt-28">
+      <main className="mx-auto w-full max-w-3xl grow space-y-12 px-6 pt-16 sm:pt-24 lg:px-0 lg:pt-28">
         <section id="about" className="flex flex-col gap-4">
-          <h1 className="text-2xl font-bold">About</h1>
+          <h2 className="text-2xl font-bold">About</h2>
           <p>Software engineer, agent provocateur.</p>
         </section>
         <Separator />
-        <section id="essays"></section>
-        <section id="tech"></section>
-        <section id="media"></section>
+        <section id="essays">
+          <h2 className="text-2xl font-bold">Essays</h2>
+        </section>
+        <Separator />
+        <section id="tech">
+          <h2 className="text-2xl font-bold">Tech</h2>
+        </section>
+        <Separator />
+        <section id="media">
+          <h2 className="text-2xl font-bold">Media</h2>
+        </section>
       </main>
       <footer>
         <p className="mt-10 text-center text-sm/6 text-stone-600 dark:text-stone-400">
